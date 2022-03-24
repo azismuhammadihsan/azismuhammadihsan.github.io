@@ -24,16 +24,12 @@ body {
   font-size: 2rem;
   border: 1px solid #ffffff;
   outline: none;
-  background-color: #008080;
+  background-color: #33b5e5;
 }
 
 .calculator-grid > button:hover {
   background-color: #00ffff;
 }
-
-/* .calculator-grid .operation, .calculator-grid .span-two{
-  background-color: #ff7373;
-} */
 
 .span-two {
   grid-column: span 2;
