@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: Gotham Rounded, sans-serif;
   font-weight: normal;
@@ -19,7 +21,7 @@ body {
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.calculator-grid > button {
+.calculator-grid>button {
   cursor: pointer;
   font-size: 2rem;
   border: 1px solid #ffffff;
@@ -27,7 +29,7 @@ body {
   background-color: #33b5e5;
 }
 
-.calculator-grid > button:hover {
+.calculator-grid>button:hover {
   background-color: #00ffff;
 }
 
@@ -55,4 +57,30 @@ body {
 .output .current-oper {
   color: #ffffff;
   font-size: 2.5rem;
+}
+
+/* untuk tab */
+@media (max-width:1000px) {
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 75px);
+  }
+
+}
+
+/* untuk smartphone */
+@media (max-width: 670px) {
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 50px);
+  }
+
 }
